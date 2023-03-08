@@ -1,0 +1,51 @@
+#header{
+    background-color: blue;
+    color: white;
+    width:100%;
+}
+
+#header_block_left{
+    width:20%; 
+    height: 200px;  
+    float: left;
+    background-color: blue;
+    color: white;
+}
+
+#header_block_center{
+    width:30%; 
+    height: 200px;  
+    float: left;
+    background-color: blue;
+    color: white;
+}
+
+#header_block_rigth{
+    width:60%; 
+    height: 200px;  
+    float: right;
+    background-color: blue;
+    color: white;
+}
+
+.class_main_block_left {
+    width:33%; 
+    height: 200px;  
+    float:left; ; 
+    background-color: #2E406F;
+    color: white;
+}
+.class_main_block_center {
+    width:33%; 
+    height: 200px;  
+    float:left; ; 
+    background-color: #2E406F;
+    color:white
+}
+.class_main_block_right{
+    width:34%; 
+    height: 200px;  
+    float:right; 
+    background-color: #2E406F;
+    color:white
+}
