@@ -29,23 +29,33 @@
 }
 
 .class_main_block_left {
-    width:33%; 
+    width:32%; 
     height: 200px;  
     float:left; ; 
     background-color: #2E406F;
     color: white;
+    padding-left: 2%;
 }
 .class_main_block_center {
-    width:33%; 
+    width:32%; 
     height: 200px;  
     float:left; ; 
     background-color: #2E406F;
-    color:white
+    color:white;
+    
 }
 .class_main_block_right{
-    width:34%; 
+    width:32%; 
     height: 200px;  
     float:right; 
     background-color: #2E406F;
-    color:white
+    color:white;
+
+}
+
+/** Linea Separadora */
+.linea_separadora{
+    width:70%;
+    text-align:left;
+    margin-left: 0;
 }
