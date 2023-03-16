@@ -5,117 +5,201 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css"     href="css/style1.css">
-    <title>miCV</title>
+
+    <!-- agregamos los íconos de redes sociales -->
+    <link rel="stylesheet" href=
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> <!-- link para iconos de redes sociales-->
+
+    <title>Mi CV</title>
+
 </head>
 
-<body style="background-color: #2E406F">
-    <div id="header" style="width:100%; height: 200px; background-color: #2E406F; margin: 0;">
-        <div  id="header_block_left" style="width:20%; height: 200px;  float:left;  background-color: #2E406F;" >
-            <img src="imagenes/foto.avif" alt="cara del autor" height="150px" width="150px" style="vertical-align: middle;padding: 10%; border: 50px;"/>
-        </div>
-
-        <div  id="header_block_center" style="width:30%; height: 200px;  float:left; ; background-color: #2E406F; " >
-            <h1 id="nombre">SMITH GOMEZ</h1>
-            <div id="contenedor_del_boton" style="display:block">
-                <button type="button" id="contactame">Contactame</button>
-            </div>
-            
-            <div id="datos_de_contacto" style="visibility:hidden">
-                <P>SmithG_53@gmail.com</P>
-                <P id="boton">+549 221 437 2097</P>
-                <p>web: <a href="http://www.smithgomez.codes" target="_blank"> www.smithgomez.codes </a> </p>
-                <p id="waplink" style="visibility: hidden"> waplink</p>
-            </div>
-        </div>
-        <div  id="header_block_right" style="width:50%; height: 200px;  float:right; ; background-color: #2E406F;" >
+<body>
+    <!--Definimos un encabezado para colocar la foto y la presentacion principal-->
+    <div class="header" style="clear: both; display: table;">
         
-            <h2>Desarrollador Web</h2>
-            <P>Profesional con diez años de experiencia y coocimiento demostrable en desarrollo web</P>
-            <p>Programador con más de cinco años de experiencia generando código para empresas del sector comercial.</p>
-        </div> 
+        <div id="cuadro_foto" style="width:22%; float: left;">
+            <img src="imagenes/foto.avif" alt="rostro del autor" height="180px" width="180px" />
+        </div>
+        <div id="cuadro_nombre" style="width: 78%; float: left;">
+            <h1 style="text-align:left;">Alex  Dash</h1>
+            <h2 style="text-align:left;"> Desarrollador Full Stack</h2>
+            <h3>Profesional con diez años de experiencia y conocimiento demostrable en desarrollo web. </h3>
+            <h3>Programador con más de cinco años de experiencia generando código para empresas del sector comercial. </h3>
+        </div>
     </div>
+    <!--Definimos parte Central-  para colocar el menu de informacion-->
+    <div class="clearfix">
+        <div class="column menu">
+            <ul>
+              <li id="boton_Habilidades">Habilidades</li>
+              <li id="boton_Estudios">Estudios</li>
+              <li id="boton_Experiencia">Experiencia</li>
+              <li id="boton_Contacto">Contacto</li>
+            </ul>
+        </div>
 
-    <div id="Habilidades" style="width:100%; height: 200px; position: relative; background-color: #2E406F; margin: 0;">
-        <div id="main" style="margin-left: 0px; color: #2E406F">
-            <div  id="main_block_left" class="class_main_block_left"  >
-                <h2>  Habilidades Profesionales</h2>
-                <hr class="linea_separadora">
-                <ul>
-                    <li>
-                        Flexible
-                    </li>
-                    <li>
-                        Orientado a Resultados
-                    </li>
-                    <li>
-                        Analítico
-                    </li>
-                    <li>
-                        Formador de equipos
-                    </li>
-                </ul>
-            </div>
-        
-            <div  id="main_block_center" class="class_main_block_center"  >
-                <h2> Habilidades Personales</h2>
+<!--Aqui se definen 4 cuadros con informacion segun los menues.
+        Desde script.js  se modifica el style:display:block  o display:none; para que se muestre solo 
+        un cuadro a la vez-->
+
+<!--Definimos el cuadro de HABILIDADES, -->
+        <div class="column content">
+            <div id="contenedor_Habilidades" class="class_habilidades" style="display:block">
+    <!-- Aqui ponemos los 3 div con las habilidades -->
+                <div  id="habilidades_block_left" class="class_habilidades_block_left"  >
+                    <h2>  Habilidades Profesionales:</h2>
                     <hr class="linea_separadora">
-                <ul>
-                    <li>
-                        Independiente
-                    </li>
-                    <li>
-                        Comprometido
-                    </li>
-                    <li>
-                        Motivador
-                    </li>
-                    <li>
-                        Buen Comunicador
-                    </li>
-                </ul>
+                    <ul>
+                        <li>
+                            Flexible
+                        </li>
+                        <li>
+                            Orientado a Resultados
+                        </li>
+                        <li>
+                            Analítico
+                        </li>
+                        <li>
+                            Formador de equipos
+                        </li>
+                    </ul>
+                </div>
+            
+                <div  id="habilidades_block_center" class="class_habilidades_block_center"  >
+                    <h2> Habilidades Personales</h2>
+                        <hr class="linea_separadora">
+                    <ul>
+                        <li>
+                            Independiente
+                        </li>
+                        <li>
+                            Comprometido
+                        </li>
+                        <li>
+                            Motivador
+                        </li>
+                        <li>
+                            Buen Comunicador
+                        </li>
+                    </ul>
+                </div>
+                <div  id="habilidades_block_right" class="class_habilidades_block_right" >
+                    <h2>Habilidades Técnicas</h2>
+    
+                    <hr class="linea_separadora">
+                    <ul>
+                        <li>
+                            HTML/CSS/JavaScript
+                        </li>
+                        <li>
+                            SQL
+                        </li>
+                        <li>
+                            Python
+                        </li>
+                        <li>
+                            WordPress
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div  id="main_block_right" class="class_main_block_right" >
-                <h2>Habilidades Técnicas</h2>
 
-                <hr class="linea_separadora">
+<!--Definimos el cuadro de ESTUDIOS, -->
+            <div id="contenedor_Estudios" class="class_estudios" style="display:none">              
+                <div  id="estudios_block_left" class="class_estudios_block_left"  >
+                    <h2>Educación Formal:</h2>
+                    <hr class="linea_separadora">
+                    <ul>
+                        <li>
+                            <span style="font-weight:bold">Bachiller en Ciencias de la Computación </span>, Universidad de Buenos Aires - 2021
+                        </li>
+                        <li>
+                            <span style="font-weight:bold">Técnico Superior en Computacion</span>, Escuela Técnica Rio de la Plata - 2016 
+                        </li>
+                        
+                    </ul>
+                </div>
+            
+                <div  id="estudios_block_right" class="class_estudios_block_right" >
+                    <h2>Capacitación Adicional:</h2>
+    
+                    <hr class="linea_separadora">
+                    <ul>
+                        <li>
+                            WordPress, WooCommerce, SEO -  Udemy.com course topics
+                        </li>
+                        <li>
+                            Programming with Mosh, Clever Programmer -  freeCodeCamp.org
+                        </li>
+                        <li>
+                            Python for data analytics - freeCodeCamp.org
+                        </li>
+                        
+                    </ul>
+                </div>
+
+            </div>
+
+            <div id="contenedor_Experiencia" class="class_experiencia" style="display:none">
+                <h2>Experiencia Profesional:</h2>
                 <ul>
                     <li>
-                        HTML/CSS/JavaScript
+                        <span style="font-weight:bold"> MysteryTech Company  </span>-  Febrero 2020- Dic 2021.
+                        <p>WordPress Developer/Tech Support:  Responsable del mantenimiento, upgrade, diagnóstico de problemas del datacenter de gestión de ventas.
+                            Desarrollo  de los sitios web de gestión, usando HTML/CSS/JavaScript y varios modulos de WordPress.</p>
+                    </li>
+
+                    <li>
+                        <span style="font-weight:bold"> Realtor S.A  </span>-  Enero 2019 2020- Dic 2019.
+                        <p>Desarrollador full stack: Responsable de desarrollos full stack y gestión de proyectos de clientes.</p>
                     </li>
                     <li>
-                        SQL
+                        <span style="font-weight:bold"> Desarrollador FreeLance  </span>-   Enero 2019- Actualidad.  
+                        <p> Desarrollador independiente de front-end/backend.</p>
                     </li>
-                    <li>
-                        Python
-                    </li>
-                    <li>
-                        WordPress
-                    </li>
-                </ul>
             </div>
+
+            <div id="contenedor_Contacto" class="class_contacto" style="display:none">
+                <!--Formulario de contacto-->
+                <h3 style="color:white">Envíame tu consulta o propuesta y te responderé a la brevedad</h3>
+                
+                <div id="after_submit">
+                    <form id="contact_form"  method="post">
+                      <div class="row">
+                        <label class="required" style="color:white" for="name">Tu nombre:</label><br />
+                        <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+                        <span id="name_validation" class="error_message"></span>
+                      </div>
+                      <div class="row">
+                        <label class="required" style="color:white" for="email">Tu email:</label><br />
+                        <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+                        <span id="email_validation" class="error_message"></span>
+                      </div>
+                      <div class="row">
+                        <label class="required" style="color:white" for="message">Tu mensaje:</label><br />
+                        <textarea id="message" class="input" name="message" rows="5" cols="30"></textarea><br />
+                        <span id="message_validation" class="error_message"></span>
+                      </div>
+                        
+                        <input id="submit_button" type="submit" value="Enviar Mensaje" />
+                    </form>
+                </div>
+            </div>
+
         </div>
     </div>
-
-    <div id="educacion_experiencia" style="width:100%; background-color: #2E406F; color: white; margin: 0;">
-        <h1>Educación</h1>
-        <h3>Universidad de Buenos Aires</h3>
-        <p>&nbsp; &nbsp;Bachiller en Ciencias de la Computación</p>
-        <p>&nbsp; &nbsp;Graduado en 2020.</p>
-
-        <h1>Experiencia Laboral </h1>
-        <h3>WordPress Developer/Tech Support  -   MysteryTech</h3>
-        <p>&nbsp; &nbsp;Febrero 2020- presente</p>
-        <p>&nbsp; &nbsp;Mantenimiento, upgrade, diagnóstico de problemas del datacenter de gestión de ventas.</p>
-        <p>&nbsp; &nbsp;Desarrollo e implementacion de cambios y funcionalidades a los sitios de gestión, 
-            usando HTML/CSS/JavaScript y varios modulos de WordPress. <br></p>
-
-        <h3>Vendedor  -   Realtor S.A. </h3>
-        <p>&nbsp; &nbsp;Octubre  2014- Julio 2019</p>
-        <p>&nbsp; &nbsp;Desarrollo de estrategias de ventas.</p>
-        <p>&nbsp; &nbsp;Preparación de documentación, presupuestos y armado de procedimientos.</p>
-        <hr>
+    
+    <div class="footer">
+        <p>Contactame:  dash@coderworld.com</p>
+        
+        <a href="http://www.linkedin.com" class="fa fa-linkedin"></a>
+        <a href="http://www.facebook.com" class="fa fa-facebook"></a>
+        <a href="http://www.twitter.com" class="fa fa-twitter"></a>
+        <a href="https://api.whatsapp.com/send/?phone=5491155555555&text&type=phone_number&app_absent=0" class="fa fa-whatsapp"></a>
+        
     </div>
-    <script src="js/funcion.js"></script>
+        
 
+    <script src="js/script.js"></script>
 </body>
-</html>
